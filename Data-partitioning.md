@@ -280,6 +280,7 @@ You should consider the following points when deciding and how, or whether, to p
 - Messages that are sent as part of a transaction must specify a partition key. This can be a _SessionId, PartitionKey,_ or _MessageId_. All messages that are sent as part of the same transaction must specify the same partition key because they must be handled by the same message broker process. You cannot send messages to different queues or topics within the same transaction.
 - You cannot configure a partitioned queue or topic to be automatically deleted when it becomes idle.
 - If you are building cross-platform or hybrid solutions, you cannot currently use partitioned queues and topics with the Advanced Message Queuing Protocol (AMQP).
+
 # Partitioning strategies for Azure DocumentDB
 Azure DocumentDB is a NoSQL database that can store documents. A document in DocumentDB is a JSON-serialized representation of an object or other piece of data. No fixed schemas are enforced except that every document must contain a unique ID.
 
